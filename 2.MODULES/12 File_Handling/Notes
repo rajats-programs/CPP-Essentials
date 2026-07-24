@@ -1,0 +1,75 @@
+# File Handling
+
+## What is File Handling?
+
+File handling is used to store and retrieve data from files instead of using the console.
+
+C++ provides the `<fstream>` library for file operations.
+
+---
+
+## File Streams
+
+| Class | Purpose |
+|-------|---------|
+| `ifstream` | Read from a file |
+| `ofstream` | Write to a file |
+| `fstream` | Read and write a file |
+
+---
+
+## Writing to a File
+
+```cpp
+#include <fstream>
+
+ofstream file("data.txt");
+file << "Hello World";
+file.close();
+```
+
+---
+
+## Reading from a File
+
+```cpp
+#include <fstream>
+
+ifstream file("data.txt");
+string text;
+
+file >> text;
+cout << text;
+
+file.close();
+```
+
+---
+
+## Appending to a File
+
+```cpp
+ofstream file("data.txt", ios::app);
+file << " Welcome";
+file.close();
+```
+
+---
+
+## Closing a File
+
+Always close the file after completing file operations.
+
+```cpp
+file.close();
+```
+
+---
+
+## Important Points
+
+- Include the `<fstream>` header file.
+- Use `ofstream` to write to a file.
+- Use `ifstream` to read from a file.
+- Use `fstream` for both reading and writing.
+- Always close the file using `close()`.
