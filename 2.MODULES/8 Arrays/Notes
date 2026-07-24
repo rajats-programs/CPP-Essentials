@@ -1,0 +1,104 @@
+# Arrays
+
+## What is an Array?
+
+An array is a collection of elements of the same data type stored in contiguous memory locations.
+
+---
+
+## Array Declaration
+
+**Syntax:**
+
+```cpp
+data_type array_name[size];
+```
+
+Example:
+
+```cpp
+int marks[5];
+```
+
+---
+
+## Array Initialization
+
+```cpp
+int marks[5] = {90, 85, 78, 88, 95};
+```
+
+Or
+
+```cpp
+int marks[] = {90, 85, 78, 88, 95};
+```
+
+---
+
+## Accessing Array Elements
+
+Array elements are accessed using their index.
+
+**Index starts from 0.**
+
+Example:
+
+```cpp
+cout << marks[0];
+cout << marks[2];
+```
+
+---
+
+## Updating Array Elements
+
+```cpp
+marks[1] = 80;
+```
+
+---
+
+## Traversing an Array
+
+Using a `for` loop:
+
+```cpp
+for (int i = 0; i < 5; i++)
+{
+    cout << marks[i] << " ";
+}
+```
+
+---
+
+## Array Size
+
+```cpp
+int size = sizeof(marks) / sizeof(marks[0]);
+```
+
+---
+
+## Advantages of Arrays
+
+- Stores multiple values of the same type.
+- Easy to access using an index.
+- Efficient memory usage.
+
+---
+
+## Limitations of Arrays
+
+- Fixed size.
+- Can store only one data type.
+- Insertion and deletion are inefficient.
+
+---
+
+## Important Points
+
+- Array indexing starts from **0**.
+- All elements must be of the same data type.
+- Accessing an invalid index leads to undefined behavior.
+- The size of an array cannot be changed after declaration.
