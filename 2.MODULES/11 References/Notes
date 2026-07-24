@@ -1,0 +1,73 @@
+# References
+
+## What is a Reference?
+
+A reference is an alias (another name) for an existing variable.
+
+---
+
+## Reference Declaration
+
+**Syntax:**
+
+```cpp
+data_type &reference_name = variable_name;
+```
+
+Example:
+
+```cpp
+int num = 10;
+int &ref = num;
+```
+
+---
+
+## How References Work
+
+Both the variable and its reference point to the same memory location.
+
+```cpp
+cout << num;  // 10
+cout << ref;  // 10
+```
+
+---
+
+## Modifying Through a Reference
+
+Changing the reference also changes the original variable.
+
+```cpp
+ref = 20;
+
+cout << num;  // 20
+```
+
+---
+
+## References vs Pointers
+
+| References | Pointers |
+|------------|----------|
+| Alias of a variable | Stores a memory address |
+| Must be initialized | Can be initialized later |
+| Cannot be null | Can be `nullptr` |
+| Cannot be changed to refer to another variable | Can point to different variables |
+
+---
+
+## Advantages of References
+
+- Simpler syntax than pointers.
+- Avoids unnecessary copying of data.
+- Commonly used for function parameters.
+
+---
+
+## Important Points
+
+- A reference is another name for a variable.
+- References must be initialized when declared.
+- A reference cannot refer to another variable after initialization.
+- Changes made through a reference affect the original variable.
