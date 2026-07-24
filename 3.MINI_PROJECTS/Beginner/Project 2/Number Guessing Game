@@ -1,0 +1,83 @@
+//New concepts used in this project are taken down as notes
+
+// rand()
+// What is it?
+// rand() is a built-in function that generates a random integer.
+
+// Syntax
+// rand();
+// or
+// int number = rand();
+// Meaning
+// rand() → Generates a random integer.
+// number → Stores the generated value.
+
+// srand()
+// What is it?
+// srand() is a built-in function used to initialize the random number generator with a starting value (called the seed).
+// Without srand(), rand() generates the same sequence every time the program runs.
+
+// Syntax
+// srand(seed);
+// Example
+// srand(10);
+// Meaning
+// seed → Starting value used by the random number generator.
+
+// time(0)
+// What is it?
+// time(0) is a built-in function that returns the current system time.
+// We use it to provide a changing seed to srand().
+
+// Syntax
+// time(0);
+// or
+// time(NULL);
+// Both are commonly used and have the same effect.
+
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int random_num,guess=0;
+  int number;
+  cout<<"Welcome To The Number Guessing game!"<<endl;
+  srand(time(0));
+  random_num = rand() % 100 + 1;
+  cout<<"Guess the number: " <<endl;
+  
+  do
+  {
+    cin>>number;
+    guess++;
+    if (number>random_num)
+    {
+      cout<<"Guess a smaller number"<<endl;
+    }
+    else if (number<random_num)
+    {
+       cout<<"Guess a larger number"<<endl;
+    }
+  } while (number!=random_num);
+  
+  if (number == random_num)
+  {
+    cout<<"Congratulations! You guessed the number in "<< guess << " attempts"<<endl;
+  }
+  
+
+  return 0;
+}
+
+
+
+
+
+
+
+
