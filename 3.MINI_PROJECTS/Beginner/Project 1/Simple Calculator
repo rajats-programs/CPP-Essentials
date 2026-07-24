@@ -1,0 +1,119 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+float add(float,float);
+float sub(float,float);
+float mul(float,float);
+float div(float,float);
+int rem(int,int);
+
+int main()
+{
+cout<< "Welcome to the Simple Calculator!"<<endl;
+float a,b;
+int option;
+float result;
+cout<<"Enter the first number: "<<endl;
+cin>>a;
+cout<<endl;
+cout<<"Enter the second number: "<<endl;
+cin>>b;
+cout<<endl;
+cout<<endl;
+
+cout<<"1.Addition\t2.Subtraction\n3.Multiplication\t4.Divison\n5.Remainder"<<endl;
+cout<<"Select the operation you want to perform"<<endl;
+  cin>>option;
+
+  switch (option)
+  {
+  case 1:
+    cout<<"Addition of 2 numbers is ";
+    result = add(a,b);
+    cout<<result<<endl;
+    break;
+    case 2:
+    cout<<"Subtraction of 2 numbers is ";
+    result = sub(a,b);
+    cout<<result<<endl;
+    break;
+    case 3:
+     cout<<"Multiplication of 2 numbers is ";
+     result = mul(a,b);
+     cout<<result<<endl;
+    break;
+    case 4:
+   
+     result = div(a,b);
+ if (result==0)
+     {
+      break;
+     }
+     else
+     {
+      cout<<"Division of 2 numbers is ";
+      cout<<result<<endl;
+     }
+     
+    break;
+    case 5:
+     
+     result = rem(a,b);
+     if (result==0)
+     {
+      break;
+     }
+     
+    else
+    {
+      cout<<"Remainder of 2 numbers is ";
+      cout<<result<<endl;
+    }
+    
+    break;
+  
+  default:
+    cout<<"Invalid choice"<<endl;
+    break;
+  }
+
+return 0;
+}
+
+
+float add(float a,float b){
+  return a + b;
+}
+float sub(float a,float b){
+  return a - b;
+}
+float mul(float a,float b){
+  return a * b;
+}
+float div(float a,float b){
+  if (b==0)
+  {
+    cout<<"Error:invalid input"<<endl;
+    return 0;
+  }
+  else
+  {
+    return a / b;
+  }
+}
+int rem(int a,int b){
+  if (b==0)
+  {
+    cout<<"Error:invalid input"<<endl;
+    return 0;
+  }
+  else
+  {
+    return a % b;
+  }
+}
+
+
+//New things which I got to know
+//Put return 0 inside the if statement which is inside the function otherwise there is a problem 
+//Always use int for the remainder as float and other data type doesnt work for it
