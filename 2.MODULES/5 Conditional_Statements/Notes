@@ -1,0 +1,171 @@
+# Conditional Statements
+
+## What are Conditional Statements?
+
+Conditional statements allow a program to make decisions based on whether a condition is true or false.
+
+---
+
+## 1. if Statement
+
+Executes a block of code only if the condition is true.
+
+**Syntax:**
+
+```cpp
+if (condition)
+{
+    // code
+}
+```
+
+Example:
+
+```cpp
+int age = 18;
+
+if (age >= 18)
+{
+    cout << "Eligible to vote";
+}
+```
+
+---
+
+## 2. if-else Statement
+
+Executes one block if the condition is true; otherwise, executes another block.
+
+**Syntax:**
+
+```cpp
+if (condition)
+{
+    // code
+}
+else
+{
+    // code
+}
+```
+
+Example:
+
+```cpp
+if (age >= 18)
+{
+    cout << "Adult";
+}
+else
+{
+    cout << "Minor";
+}
+```
+
+---
+
+## 3. else-if Ladder
+
+Used to check multiple conditions.
+
+**Syntax:**
+
+```cpp
+if (condition1)
+{
+    // code
+}
+else if (condition2)
+{
+    // code
+}
+else
+{
+    // code
+}
+```
+
+Example:
+
+```cpp
+int marks = 85;
+
+if (marks >= 90)
+    cout << "Grade A";
+else if (marks >= 75)
+    cout << "Grade B";
+else
+    cout << "Grade C";
+```
+
+---
+
+## 4. Nested if
+
+An `if` statement inside another `if` statement.
+
+Example:
+
+```cpp
+if (age >= 18)
+{
+    if (citizen)
+    {
+        cout << "Eligible";
+    }
+}
+```
+
+---
+
+## 5. switch Statement
+
+Used when there are multiple choices based on a single value.
+
+**Syntax:**
+
+```cpp
+switch (expression)
+{
+case value1:
+    // code
+    break;
+
+case value2:
+    // code
+    break;
+
+default:
+    // code
+}
+```
+
+Example:
+
+```cpp
+int day = 2;
+
+switch (day)
+{
+case 1:
+    cout << "Monday";
+    break;
+
+case 2:
+    cout << "Tuesday";
+    break;
+
+default:
+    cout << "Invalid Day";
+}
+```
+
+---
+
+## Important Points
+
+- `if` checks a condition.
+- `else` runs when the `if` condition is false.
+- Use `else-if` for multiple conditions.
+- `switch` is suitable for multiple fixed choices.
+- Don't forget `break` in a `switch` statement.
