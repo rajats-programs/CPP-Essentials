@@ -1,0 +1,97 @@
+# Pointers
+
+## What is a Pointer?
+
+A pointer is a variable that stores the memory address of another variable.
+
+---
+
+## Pointer Declaration
+
+**Syntax:**
+
+```cpp
+data_type *pointer_name;
+```
+
+Example:
+
+```cpp
+int *ptr;
+```
+
+---
+
+## Initializing a Pointer
+
+```cpp
+int num = 10;
+int *ptr = &num;
+```
+
+Here:
+- `num` stores the value.
+- `&num` gives the address of `num`.
+- `ptr` stores that address.
+
+---
+
+## Address Operator (`&`)
+
+The `&` operator returns the memory address of a variable.
+
+Example:
+
+```cpp
+cout << &num;
+```
+
+---
+
+## Dereference Operator (`*`)
+
+The `*` operator accesses the value stored at the address.
+
+Example:
+
+```cpp
+cout << *ptr;
+```
+
+Output:
+
+```
+10
+```
+
+---
+
+## Pointer Example
+
+```cpp
+int num = 10;
+int *ptr = &num;
+
+cout << ptr;   // Address
+cout << *ptr;  // Value
+```
+
+---
+
+## NULL Pointer
+
+A pointer that points to nothing.
+
+```cpp
+int *ptr = nullptr;
+```
+
+---
+
+## Important Points
+
+- A pointer stores a memory address.
+- `&` returns the address of a variable.
+- `*` accesses the value at that address.
+- Initialize pointers before using them.
+- Use `nullptr` when a pointer doesn't point to any object.
