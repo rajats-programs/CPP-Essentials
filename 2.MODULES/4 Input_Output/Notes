@@ -1,0 +1,122 @@
+# Input and Output
+
+## What is Input?
+
+Input is the data provided by the user to a program.
+
+C++ uses `cin` to take input.
+
+**Syntax:**
+
+```cpp
+cin >> variable;
+```
+
+Example:
+
+```cpp
+int age;
+cin >> age;
+```
+
+---
+
+## What is Output?
+
+Output is the information displayed by the program.
+
+C++ uses `cout` to display output.
+
+**Syntax:**
+
+```cpp
+cout << variable;
+```
+
+Example:
+
+```cpp
+cout << "Hello World";
+```
+
+---
+
+## Input and Output Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string name;
+    int age;
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age;
+
+    return 0;
+}
+```
+
+---
+
+## Escape Sequences
+
+| Escape Sequence | Meaning |
+|----------------|---------|
+| `\n` | New line |
+| `\t` | Horizontal tab |
+| `\"` | Double quote |
+| `\\` | Backslash |
+
+Example:
+
+```cpp
+cout << "Hello\nWorld";
+```
+
+Output:
+
+```
+Hello
+World
+```
+
+---
+
+## `endl`
+
+`endl` moves the cursor to the next line and flushes the output buffer.
+
+Example:
+
+```cpp
+cout << "Hello" << endl;
+cout << "World";
+```
+
+---
+
+## Difference Between `\n` and `endl`
+
+| `\n` | `endl` |
+|------|---------|
+| Moves to next line | Moves to next line and flushes the buffer |
+| Faster | Slightly slower |
+
+---
+
+## Important Points
+
+- `cin` is used for input.
+- `cout` is used for output.
+- `>>` is the extraction operator.
+- `<<` is the insertion operator.
+- Use `\n` or `endl` for a new line.

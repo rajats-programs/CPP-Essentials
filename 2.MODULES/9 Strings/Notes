@@ -1,0 +1,108 @@
+# Strings
+
+## What is a String?
+
+A string is a sequence of characters used to store text.
+
+In C++, the `string` data type is available through the `<string>` header file.
+
+---
+
+## String Declaration
+
+**Syntax:**
+
+```cpp
+string variable_name;
+```
+
+Example:
+
+```cpp
+string name;
+```
+
+---
+
+## String Initialization
+
+```cpp
+string name = "Rajat";
+```
+
+---
+
+## Taking String Input
+
+### Using `cin`
+
+```cpp
+string name;
+cin >> name;
+```
+
+> Reads input only until the first space.
+
+### Using `getline()`
+
+```cpp
+string name;
+getline(cin, name);
+```
+
+> Reads the entire line, including spaces.
+
+---
+
+## Displaying a String
+
+```cpp
+cout << name;
+```
+
+---
+
+## Common String Functions
+
+| Function | Description |
+|----------|-------------|
+| `length()` | Returns the length of the string |
+| `size()` | Returns the size of the string |
+| `empty()` | Checks if the string is empty |
+| `clear()` | Removes all characters |
+
+Example:
+
+```cpp
+cout << name.length();
+```
+
+---
+
+## Accessing Characters
+
+```cpp
+cout << name[0];
+cout << name[2];
+```
+
+---
+
+## Concatenation
+
+```cpp
+string first = "Hello";
+string second = "World";
+
+cout << first + " " + second;
+```
+
+---
+
+## Important Points
+
+- Strings store text.
+- `cin` reads one word.
+- `getline()` reads an entire line.
+- Indexing starts from **0**.
+- `length()` and `size()` return the number of characters.

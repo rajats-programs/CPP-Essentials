@@ -1,0 +1,126 @@
+# Functions
+
+## What is a Function?
+
+A function is a block of code that performs a specific task. It helps avoid code repetition and improves program organization.
+
+---
+
+## Function Syntax
+
+```cpp
+return_type function_name(parameters)
+{
+    // code
+}
+```
+
+---
+
+## Function Declaration
+
+Declares the function before it is used.
+
+```cpp
+int add(int, int);
+```
+
+---
+
+## Function Definition
+
+Contains the actual implementation.
+
+```cpp
+int add(int a, int b)
+{
+    return a + b;
+}
+```
+
+---
+
+## Function Call
+
+Calls the function to execute it.
+
+```cpp
+int sum = add(5, 3);
+```
+
+---
+
+## Types of Functions
+
+### 1. Function with No Parameters and No Return Value
+
+```cpp
+void greet()
+{
+    cout << "Hello!";
+}
+```
+
+---
+
+### 2. Function with Parameters and No Return Value
+
+```cpp
+void greet(string name)
+{
+    cout << "Hello " << name;
+}
+```
+
+---
+
+### 3. Function with Parameters and Return Value
+
+```cpp
+int add(int a, int b)
+{
+    return a + b;
+}
+```
+
+---
+
+### 4. Function with No Parameters and Return Value
+
+```cpp
+int getNumber()
+{
+    return 10;
+}
+```
+
+---
+
+## Return Statement
+
+The `return` statement ends the function and sends a value back to the caller.
+
+Example:
+
+```cpp
+return a + b;
+```
+
+---
+
+## Advantages of Functions
+
+- Avoid code repetition
+- Improve readability
+- Make programs easier to maintain
+- Promote code reusability
+
+---
+
+## Important Points
+
+- Every function has a name.
+- `main()` is also a function.
+- `void` means the function does not return a value.
+- Parameters receive values from the function call.
+- A function should perform one specific task.

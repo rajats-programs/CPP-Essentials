@@ -1,0 +1,440 @@
+# C++ Syntax Cheat Sheet
+
+## Header Files
+
+```cpp
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+```
+
+---
+
+## Basic Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    return 0;
+}
+```
+
+---
+
+## Output
+
+```cpp
+cout << "Hello";
+cout << variable;
+cout << "Age: " << age;
+cout << endl;
+cout << "\n";
+```
+
+---
+
+## Input
+
+```cpp
+cin >> variable;
+getline(cin, variable);
+```
+
+---
+
+## Variables
+
+```cpp
+int age = 18;
+float pi = 3.14;
+double salary = 25000.50;
+char grade = 'A';
+bool flag = true;
+string name = "Rajat";
+const float PI = 3.14159;
+```
+
+---
+
+## Arithmetic Operators
+
+```cpp
++
+-
+*
+/
+%
+```
+
+---
+
+## Assignment Operators
+
+```cpp
+=
++=
+-=
+*=
+/=
+%=
+```
+
+---
+
+## Relational Operators
+
+```cpp
+==
+!=
+>
+<
+>=
+<=
+```
+
+---
+
+## Logical Operators
+
+```cpp
+&&
+||
+!
+```
+
+---
+
+## Increment / Decrement
+
+```cpp
+a++;
+++a;
+a--;
+--a;
+```
+
+---
+
+## if
+
+```cpp
+if(condition)
+{
+
+}
+```
+
+---
+
+## if-else
+
+```cpp
+if(condition)
+{
+
+}
+else
+{
+
+}
+```
+
+---
+
+## else-if Ladder
+
+```cpp
+if(condition)
+{
+
+}
+else if(condition)
+{
+
+}
+else
+{
+
+}
+```
+
+---
+
+## switch
+
+```cpp
+switch(choice)
+{
+case 1:
+    break;
+
+case 2:
+    break;
+
+default:
+}
+```
+
+---
+
+## for Loop
+
+```cpp
+for(int i=0;i<n;i++)
+{
+
+}
+```
+
+---
+
+## while Loop
+
+```cpp
+while(condition)
+{
+
+}
+```
+
+---
+
+## do-while Loop
+
+```cpp
+do
+{
+
+}
+while(condition);
+```
+
+---
+
+## break
+
+```cpp
+break;
+```
+
+---
+
+## continue
+
+```cpp
+continue;
+```
+
+---
+
+## Function Declaration
+
+```cpp
+int add(int, int);
+```
+
+---
+
+## Function Definition
+
+```cpp
+int add(int a,int b)
+{
+    return a+b;
+}
+```
+
+---
+
+## Function Call
+
+```cpp
+add(5,3);
+```
+
+---
+
+## void Function
+
+```cpp
+void display()
+{
+
+}
+```
+
+---
+
+## Arrays
+
+```cpp
+int arr[5];
+
+int arr[5]={1,2,3,4,5};
+
+int arr[]={1,2,3,4,5};
+```
+
+---
+
+## Traversing Array
+
+```cpp
+for(int i=0;i<5;i++)
+{
+    cout<<arr[i];
+}
+```
+
+---
+
+## Strings
+
+```cpp
+string name;
+
+string name="Rajat";
+
+cin>>name;
+
+getline(cin,name);
+
+cout<<name;
+```
+
+---
+
+## String Functions
+
+```cpp
+str.length();
+
+str.size();
+
+str.empty();
+
+str.clear();
+```
+
+---
+
+## Pointer
+
+```cpp
+int *ptr;
+
+int num=10;
+
+ptr=&num;
+
+cout<<ptr;
+
+cout<<*ptr;
+```
+
+---
+
+## nullptr
+
+```cpp
+int *ptr=nullptr;
+```
+
+---
+
+## Reference
+
+```cpp
+int num=10;
+
+int &ref=num;
+```
+
+---
+
+## File Writing
+
+```cpp
+#include <fstream>
+
+ofstream file("data.txt");
+
+file<<"Hello";
+
+file.close();
+```
+
+---
+
+## File Reading
+
+```cpp
+#include <fstream>
+
+ifstream file("data.txt");
+
+string text;
+
+file>>text;
+
+file.close();
+```
+
+---
+
+## File Append
+
+```cpp
+ofstream file("data.txt",ios::app);
+
+file<<"Hello";
+
+file.close();
+```
+
+---
+
+## Comments
+
+```cpp
+// Single line
+
+/*
+
+Multi-line
+
+*/
+```
+
+---
+
+## Useful Keywords
+
+```cpp
+int
+float
+double
+char
+bool
+string
+void
+const
+return
+if
+else
+switch
+case
+default
+for
+while
+do
+break
+continue
+true
+false
+nullptr
+```
