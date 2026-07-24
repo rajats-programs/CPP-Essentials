@@ -1,0 +1,105 @@
+# Variables and Data Types
+
+## What is a Variable?
+
+A variable is a named memory location used to store data. Its value can change during program execution.
+
+**Syntax:**
+```cpp
+data_type variable_name;
+```
+
+**Example:**
+```cpp
+int age = 18;
+```
+
+---
+
+## Rules for Naming Variables
+
+- Must start with a letter or `_`
+- Cannot start with a number
+- Cannot contain spaces
+- Cannot use C++ keywords
+- Variable names are case-sensitive
+
+**Valid:**
+```cpp
+age
+studentName
+_marks
+```
+
+**Invalid:**
+```cpp
+2age
+student name
+int
+```
+
+---
+
+## What is a Data Type?
+
+A data type specifies the type of data a variable can store.
+
+---
+
+## Common Data Types
+
+| Data Type | Description | Example |
+|-----------|-------------|---------|
+| `int` | Integer | `10` |
+| `float` | Decimal (single precision) | `3.14` |
+| `double` | Decimal (double precision) | `3.141592` |
+| `char` | Single character | `'A'` |
+| `bool` | Boolean value | `true` |
+| `string` | Sequence of characters | `"Hello"` |
+
+---
+
+## Variable Declaration
+
+```cpp
+int age;
+float salary;
+char grade;
+```
+
+---
+
+## Variable Initialization
+
+```cpp
+int age = 18;
+float pi = 3.14;
+char grade = 'A';
+```
+
+---
+
+## Multiple Variable Declaration
+
+```cpp
+int a = 10, b = 20, c = 30;
+```
+
+---
+
+## Constant
+
+A constant is a value that cannot be changed after initialization.
+
+```cpp
+const float PI = 3.14159;
+```
+
+---
+
+## Important Points
+
+- Variables store data.
+- Every variable must have a data type.
+- Initialize variables before using them.
+- Choose meaningful variable names.
