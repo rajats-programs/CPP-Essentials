@@ -1,0 +1,117 @@
+# Operators
+
+## What is an Operator?
+
+An operator is a symbol that performs an operation on one or more operands (values or variables).
+
+Example:
+
+```cpp
+int sum = 5 + 3;
+```
+
+Here, `+` is an operator.
+
+---
+
+## Types of Operators
+
+### 1. Arithmetic Operators
+
+Used to perform mathematical operations.
+
+| Operator | Meaning |
+|----------|---------|
+| `+` | Addition |
+| `-` | Subtraction |
+| `*` | Multiplication |
+| `/` | Division |
+| `%` | Modulus (Remainder) |
+
+Example:
+
+```cpp
+int a = 10, b = 3;
+
+cout << a + b;   // 13
+cout << a - b;   // 7
+cout << a * b;   // 30
+cout << a / b;   // 3
+cout << a % b;   // 1
+```
+
+---
+
+### 2. Assignment Operator
+
+Used to assign values to variables.
+
+| Operator | Example |
+|----------|---------|
+| `=` | `a = 10;` |
+
+---
+
+### 3. Comparison (Relational) Operators
+
+Used to compare two values.
+
+| Operator | Meaning |
+|----------|---------|
+| `==` | Equal to |
+| `!=` | Not equal to |
+| `>` | Greater than |
+| `<` | Less than |
+| `>=` | Greater than or equal to |
+| `<=` | Less than or equal to |
+
+Example:
+
+```cpp
+cout << (5 > 3);   // 1 (true)
+```
+
+---
+
+### 4. Logical Operators
+
+Used to combine conditions.
+
+| Operator | Meaning |
+|----------|---------|
+| `&&` | Logical AND |
+| `||` | Logical OR |
+| `!` | Logical NOT |
+
+Example:
+
+```cpp
+cout << (5 > 3 && 8 > 2);
+```
+
+---
+
+### 5. Increment & Decrement Operators
+
+| Operator | Meaning |
+|----------|---------|
+| `++` | Increase by 1 |
+| `--` | Decrease by 1 |
+
+Example:
+
+```cpp
+int a = 5;
+
+a++;
+a--;
+```
+
+---
+
+## Important Points
+
+- `%` works only with integers.
+- Integer division removes the decimal part.
+- `==` checks equality, while `=` assigns a value.
+- Operators follow precedence (BODMAS-like rules).
